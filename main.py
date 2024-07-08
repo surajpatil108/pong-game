@@ -1,9 +1,14 @@
 import time
 from turtle import Screen
+from django.shortcuts import render, HttpResponse
 
 from ball import Ball
 from paddle import Paddle
 from scoreboard import Scoreboard
+
+def index(request):
+    return HttpResponse("This is for first commit.")
+
 
 screen = Screen()
 screen.bgcolor("black")
